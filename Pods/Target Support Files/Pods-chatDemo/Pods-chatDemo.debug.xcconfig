@@ -1,0 +1,9 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/WilddogAuth" "${PODS_ROOT}/WilddogCore"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) ${PODS_ROOT}/Wilddog/Wilddog/Sources $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Wilddog" "${PODS_ROOT}/Headers/Public/WilddogAuth" "${PODS_ROOT}/Headers/Public/WilddogCore"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Wilddog" -isystem "${PODS_ROOT}/Headers/Public/WilddogAuth" -isystem "${PODS_ROOT}/Headers/Public/WilddogCore"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "WilddogAuth" -framework "WilddogCore"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods
